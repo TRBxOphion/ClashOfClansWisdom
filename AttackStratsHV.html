@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home Village Attack Strategies</title>
+    <meta charset="UTF-8">
+    <meta content="Home Village Attack Strategies" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="Main.css" rel="stylesheet">
+
+    <!--- <link rel="stylesheet" href="css/responsives.css" media="(max-width:900px)"> --->
+    <script src="Main.js"></script>
+</head>
+
+<body>
+
+<div class="grid-container">
+    <div class="header"><h1>Home Village Attack Strategies</h1></div>
+
+    <!--- Start Sidebar/Navigation ------------------------------------------------->
+
+    <div class="nav">
+        <button class="openbtn" onclick="openNav()">☰ Navigation</button>
+    </div>
+
+    <div class="sidebar" id="mySidebar">
+        <a class="closebtn" href="#closebutton" onclick="closeNav()">X</a>
+        <a href="index.html">Home</a>
+        <button class="collapsible" type="button">Home Village</button>
+        <div class="expandobj">
+            <ul>
+                <li><a href="AttackStratsHV.html">Attack Strategies</a></li>
+                <li><a href="BaseLayoutsHV.html">Base Layouts</a></li>
+                <li><a href="ClanCastleTroopsHV.html">Clan Castle Troops</a></li>
+            </ul>
+        </div>
+
+        <button class="collapsible" type="button">Builder Base</button>
+        <div class="expandobj">
+            <ul>
+                <li><a href="AttackStratsBB.html">Attack Strategies</a></li>
+                <li><a href="BaseLayoutsBB.html">Base Layouts</a></li>
+            </ul>
+        </div>
+
+        <button class="collapsible" type="button">Clan Capital</button>
+        <div class="expandobj">
+            <ul>
+                <li><a href="AttackStratsCC.html">Attack Strategies</a></li>
+                <li><a href="BaseLayoutsCC.html">Base Layouts</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--- End Sidebar/Navigation --------------------------------------------------->
+
+    <!--- Start Filters ------------------------------------------------->
+    <div>
+        <div id="filterboxes">
+            <button class="collapsible" id="filterbtn" type="button">Town Hall Level</button>
+            <div class="expandobj">
+                <div class="categories">
+                    <div>
+                <span class="category">
+                    <input id="cat-th2" type="checkbox" value="th2">
+                    <label for="cat-th2">TH2</label>
+                </span>
+                        <span class="category">
+                    <input id="cat-th3" type="checkbox" value="th3">
+                    <label for="cat-th3">TH3</label>
+                </span>
+                        <span class="category">
+                    <input id="cat-th4" type="checkbox" value="th4">
+                    <label for="cat-th4">TH4</label>
+                </span>
+                        <span class="category">
+                   <input id="cat-th5" type="checkbox" value="th5">
+                   <label for="cat-th5">TH5</label>
+                </span>
+                        <span class="category">
+                   <input id="cat-th6" type="checkbox" value="th6">
+                   <label for="cat-th6">TH6</label>
+                </span>
+                        <span class="category">
+                     <input id="cat-th7" type="checkbox" value="th7">
+                    <label for="cat-th7">TH7</label>
+                </span>
+                        <span class="category">
+                    <input id="cat-th8" type="checkbox" value="th8">
+                    <label for="cat-th8">TH8</label>
+                </span>
+                        <span class="category">
+                    <input id="cat-th9" type="checkbox" value="th9">
+                    <label for="cat-th9">TH9</label>
+                </span>
+                        <span class="category">
+                     <input id="cat-th10" type="checkbox" value="th10">
+                       <label for="cat-th10">TH10</label>
+                </span>
+                        <span class="category">
+                    <input id="cat-th11" type="checkbox" value="th11">
+                  <label for="cat-th11">TH11</label>
+                </span>
+                        <span class="category">
+                    <input id="cat-th12" type="checkbox" value="th12">
+                    <label for="cat-th12">TH12</label>
+                </span>
+                        <span class="category">
+                    <input id="cat-th13" type="checkbox" value="th13">
+                    <label for="cat-th13">TH13</label>
+                </span>
+                        <span class="category">
+                    <input id="cat-th14" type="checkbox" value="th14">
+                    <label for="cat-th14">TH14</label>
+                </span>
+                        <span class="category">
+                    <input id="cat-th15" type="checkbox" value="th15">
+                    <label for="cat-th15">TH15</label>
+                </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="categories">
+            <div>
+      <span class="category">
+          <input id="cat-air" type="checkbox" value="air">
+          <label for="cat-air">Air</label>
+      </span>
+                <span class="category">
+          <input id="cat-ground" type="checkbox" value="ground">
+        <label for="cat-ground">Ground</label>
+      </span>
+                <span class="category">
+          <input id="cat-mass" type="checkbox" value="mass">
+        <label for="cat-mass">Mass</label>
+      </span>
+            </div>
+        </div>
+    </div>
+
+    <!--- End filters --------------------------------------------------->
+
+
+    <!--- Start Content ------------------------------------------------->
+
+    <div class="container">
+        <div class="filterDiv th7 th8 th9 th10 air"><a href="HVAttackPages/ZapDragon.html">Zap Dragon</a></div>
+        <div class="filterDiv th2 th3 th4 ground"><a href="HVAttackPages/GiBarch.html">GiBarch</a></div>
+        <div class="filterDiv th7 th8 ground mass"><a href="HVAttackPages/MassHogs.html">Mass Hogs</a></div>
+        <div class="filterDiv th9 th10 th11 th12 th13 th14 th15 air"><a href="HVAttackPages/QueenChargeLaloo.html">Q
+            Charge Laloo</a></div>
+        <div class="filterDiv th11 th12 th13 th14 th15 air"><a href="HVAttackPages/BlizzardLaloo.html">Blizzard
+            Laloo</a></div>
+        <div class="filterDiv th10 th11 th12 ground"><a href="HVAttackPages/QueenChargeHybrid.html">Q Charge Hybrid</a>
+        </div>
+    </div>
+
+
+    <!--- End Content --------------------------------------------------->
+
+    <div class="aside">
+        <p>This material is unofficial and is not endorsed by Supercell. For more information see Supercell's Fan
+            Content Policy: www.supercell.com/fan-content-policy.</p>
+    </div>
+
+    <div class="footer" id="footer">
+        <ul class="footer">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="suggestions.html">Suggestions</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!--- Start Script  ----------------------------------------------->
+
+<script src="Main.js"></script>
+
+<!--- End Script  ------------------------------------------------->
+
+
+</body>
+
+</html>

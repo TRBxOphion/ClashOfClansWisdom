@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Formular -- Portfolio -- Simon Amsler</title>
+    <meta charset="UTF-8">
+    <meta content="Suggestions" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="Main.css" rel="stylesheet">
+
+    <script src="Main.js">
+    </script>
+</head>
+
+<body>
+<div class="grid-container" id="grid-container">
+    <div class="header"><h1>Suggestions</h1></div>
+
+
+    <!--- Start Sidebar/Navigation --------------------------------------------------->
+
+
+    <div class="nav">
+        <button class="openbtn" onclick="openNav()">☰ Navigation</button>
+    </div>
+
+    <div class="sidebar" id="mySidebar">
+        <a class="closebtn" href="#closebutton" onclick="closeNav()">X</a>
+        <a href="index.html">Home</a>
+        <button class="collapsible" type="button">Home Village</button>
+        <div class="expandobj">
+            <ul>
+                <li><a href="AttackStratsHV.html">Attack Strategies</a></li>
+                <li><a href="#">Base Layouts</a></li>
+                <li><a href="#">Clan Castle Troops</a></li>
+            </ul>
+        </div>
+
+        <button class="collapsible" type="button">Builder Base</button>
+        <div class="expandobj">
+            <ul>
+                <li><a href="#">Attack Strategies</a></li>
+                <li><a href="#">Base Layouts</a></li>
+            </ul>
+        </div>
+
+        <button class="collapsible" type="button">Clan Capital</button>
+        <div class="expandobj">
+            <ul>
+                <li><a href="#">Attack Strategies</a></li>
+                <li><a href="#">Base Layouts</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!--- End Sidebar/Navigation --------------------------------------------------->
+
+
+    <!--- Start Suggestion ----------------------------------------------------------->
+
+    <div class="content">
+
+        <form action="https://formspree.io/f/mrgwwykz"
+              method="POST">
+
+
+            <div>
+                <label for="vorname">*Firstname: </label><br>
+                <input id="vorname" maxlength="30" minlength="2" name="vorname" required type="text"><br>
+                <label for="nachname">Lastname: </label><br>
+                <input id="nachname" maxlength="30" minlength="2" name="nachname" required type="text"><br>
+                <label for="email">*Email: </label><br>
+                <input id="email" maxlength="60" minlength="3" name="email" required type="email"><br>
+                <label for="nachricht">Suggestion: </label><br>
+                <input id="nachricht" maxlength="200" name="Nachricht" type="text">
+
+            </div>
+
+            <div>
+                <input type="submit" value="Send">
+                <input type="reset" value="Delete">
+            </div>
+        </form>
+
+    </div>
+    <div class="aside">
+        <h2>Info</h2>
+        <p>The information in this form will be sent by email to the author and will be treated with discretion.</p>
+    </div>
+
+    <!--- End Suggestion ----------------------------------------------------------->
+
+    <div class="footer" id="footer">
+        <ul class="footer">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="suggestions.html">Suggestions</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--- Start Script  ----------------------------------------------->
+
+<script src="Main.js"></script>
+
+<!--- End Script  ------------------------------------------------->
+
+
+</body>
+
+</html>
