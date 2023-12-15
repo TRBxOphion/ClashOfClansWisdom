@@ -197,7 +197,9 @@ input {
     color: var(--black);
 }
 
-.active {
+.collapsible.active {
+    background-color: var(--white);
+    color: var(--black);
 }
 
 div #filterboxes {
@@ -218,6 +220,19 @@ div #filterboxes {
 .expandobj ul {
     list-style: none;
     text-align: left;
+}
+.collapsible:before{
+    content: '\002B'; /*plus sign*/
+    color: var(--white);
+    font-weight: bold;
+    float: left;
+}
+:hover:before{
+    color: var(--black);
+}
+.active:before{
+    content: "\2212"; /*minus sign*/
+    color: var(--black);
 }
 
 /*------------ Expandable CSS End ------------*/
@@ -311,10 +326,19 @@ div #filterboxes {
     margin-left: 5px;
 }
 
-#filterbtn {;
-
+#filterbtn {
+    border: solid 2px var(--white);
     background-color: var(--trrey);
     color: var(--white);
+}
+#filterbtn:hover{
+    background-color: var(--white);
+    color: var(--black);
+    border: dashed 2px var(--black);
+}
+#filterbtn.active{
+    background-color: var(--white);
+    color: var(--black);
 }
 
 .category {
