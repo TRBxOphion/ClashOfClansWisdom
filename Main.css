@@ -200,9 +200,11 @@ input {
 .active {
 }
 
-#filterboxes {
-    margin: 0;
+div #filterboxes {
+    margin: 0 auto;
     padding: 0;
+    max-width: 1000px;
+
 }
 
 .expandobj {
@@ -240,13 +242,15 @@ input {
 }
 
 .container {
-    margin-top: 200px;
     overflow: hidden;
     grid-area: content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1000px;
+
+    margin: 0 auto;
 }
 
 .container div {
@@ -308,7 +312,9 @@ input {
 }
 
 #filterbtn {;
-    text-align: center;
+
+    background-color: var(--trrey);
+    color: var(--white);
 }
 
 .category {
