@@ -127,20 +127,24 @@ input {
     left: -10px;
     background-color: var(--black);
     overflow-x: hidden;
-    transition: 0.3s;
+    transition: 0.1s;
     padding-top: 60px;
     border: none;
+    text-align: center;
 }
 
 .sidebar a {
-    padding: 8px 8px 8px 8px;
+    max-width: 1000px;
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
+    font-weight: normal;
     color: var(--white);
     display: block;
     transition: 0.3s;
     z-index: 2;
     text-align: center;
+    margin: 0 auto;
 }
 
 .sidebar a:hover {
@@ -178,18 +182,19 @@ input {
 /*------------ Expandable CSS Start ------------*/
 
 .collapsible {
+    max-width: 1000px;
     text-decoration: none;
     background-color: var(--black);
     color: white;
     cursor: pointer;
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 8px;
     width: 100%;
     border: none;
     outline: none;
     font-size: 25px;
     -webkit-transition: background-color 0.3s;
-    transition: 0.3s;
     text-align: center;
+    margin: 0 auto;
 }
 
 .collapsible:hover {
@@ -210,27 +215,30 @@ div #filterboxes {
 }
 
 .expandobj {
-    margin: 0;
     padding: 0;
     display: none;
     overflow: hidden;
     background-color: var(--trrey);
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .expandobj ul {
+    width: 1000px;
+    margin: 0 auto;
     list-style: none;
-    text-align: left;
 }
-.collapsible:before{
+
+.collapsible:after{
     content: '\002B'; /*plus sign*/
     color: var(--white);
     font-weight: bold;
     float: left;
 }
-:hover:before{
+:hover:after{
     color: var(--black);
 }
-.active:before{
+.active:after{
     content: "\2212"; /*minus sign*/
     color: var(--black);
 }
@@ -424,7 +432,7 @@ body {
     font-family: "Montserrat", sans-serif;
     margin: 0 auto;
     margin-top: 10px;
-    max-width: 2000px;
+    max-width: 1000px;
     min-height: 500px;
     color: var(--white);
     background-color: var(--black);
