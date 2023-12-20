@@ -224,16 +224,18 @@ div #filterboxes {
 }
 
 .expandobj ul {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     list-style: none;
 }
+
 
 .collapsible:after{
     content: '\002B'; /*plus sign*/
     color: var(--white);
     font-weight: bold;
     float: left;
+    margin-left: 10px;
 }
 :hover:after{
     color: var(--black);
@@ -326,6 +328,12 @@ div #filterboxes {
     justify-content: center;
     grid-area: filters;
 
+}
+.expandobj div p{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
 }
 
 .expandobj .categories div span {
