@@ -40,7 +40,6 @@ div {
     grid-area: aside;
     margin: 5px;
     padding: 5px;
-    min-height: 450px;
     text-align: center;
 }
 
@@ -441,7 +440,7 @@ body {
     margin: 0 auto;
     margin-top: 10px;
     max-width: 1000px;
-    min-height: 500px;
+
     color: var(--white);
     background-color: var(--black);
     margin-bottom: 60px;
