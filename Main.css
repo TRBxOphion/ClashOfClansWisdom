@@ -146,6 +146,20 @@ input {
     margin: 0 auto;
 }
 
+.sidebar .collapsible{
+    max-width: 1000px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: normal;
+    color: var(--white);
+    display: block;
+    transition: 0.3s;
+    z-index: 2;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .sidebar a:hover {
     color: var(--black);
     background-color: var(--white);
