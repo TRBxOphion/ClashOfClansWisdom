@@ -272,6 +272,9 @@ div #filterboxes {
     display: none;
 
 }
+.expandobj div {
+    text-align: center;
+}
 
 .show {
     display: block;
