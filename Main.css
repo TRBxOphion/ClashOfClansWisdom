@@ -273,7 +273,8 @@ input {
 
 }
  #filterboxes2 {
-    margin: 0 auto;
+
+    margin: 10px 0 0 auto;
     padding: 0;
     max-width: 1000px;
 
@@ -409,6 +410,7 @@ input {
     text-align: center;
     line-height: 40px;
     background-color: var(--trrey);
+    padding: 0 5px 0 5px ;
 }
 
 .categories label:hover {
