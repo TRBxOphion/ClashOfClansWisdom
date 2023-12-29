@@ -220,12 +220,7 @@ input {
     color: var(--black);
 }
 
-div #filterboxes {
-    margin: 0 auto;
-    padding: 0;
-    max-width: 1000px;
 
-}
 
 .expandobj {
     padding: 0;
@@ -270,6 +265,17 @@ div #filterboxes {
     text-align: center;
     margin: 2px;
     display: none;
+}
+ #filterboxes {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1000px;
+
+}
+ #filterboxes2 {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1000px;
 
 }
 .expandobj div {
@@ -365,6 +371,21 @@ div #filterboxes {
     color: var(--black);
 }
 
+#filterbtn2 {
+    border: solid 2px var(--white);
+    background-color: var(--trrey);
+    color: var(--white);
+}
+#filterbtn2:hover{
+    background-color: var(--white);
+    color: var(--black);
+    border: dashed 2px var(--black);
+}
+#filterbtn2.active{
+    background-color: var(--white);
+    color: var(--black);
+}
+
 .category {
     text-align: center;
 }
@@ -381,7 +402,7 @@ div #filterboxes {
 .categories label {
     display: block;
     border: solid 2px var(--white);
-    width: 80px;
+    min-width: 80px;
     height: 40px;
     margin-top: 5px;
     color: var(--white);
