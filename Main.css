@@ -43,6 +43,10 @@ div {
     text-align: center;
 }
 
+.aside a {
+    color: var(--white);
+}
+
 /* Aside End */
 
 
