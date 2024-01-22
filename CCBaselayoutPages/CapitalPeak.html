@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>Clan Capital Attack Strategies</title>
+    <title>Capital Peak Base layouts</title>
     <meta charset="UTF-8">
-    <meta content="Clan Capital Attack Strategies" name="description">
+    <meta content="Capital Peak Base layouts" name="description">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="../Main.css" rel="stylesheet">
 
@@ -15,42 +15,12 @@
 <body>
 
 <div class="grid-container">
-    <div class="header"><h1>Clan Capital Attack Strategies</h1></div>
+    <div class="header"><h1>Capital Peak Base layouts</h1></div>
 
     <!--- Start Sidebar/Navigation ------------------------------------------------->
 
     <div class="nav">
-        <button class="openbtn" onclick="openNav()">☰ Navigation</button>
-    </div>
-
-    <div class="sidebar" id="mySidebar">
-        <a class="closebtn" href="#closebutton" onclick="closeNav()">X</a>
-        <a href="index.html">Home</a>
-        <button class="collapsible" type="button">Home Village</button>
-        <div class="expandobj">
-            <ul>
-                <li><a href="AttackStratsHV.html">Attack Strategies</a></li>
-                <li><a href="BaseLayoutsHV.html">Base Layouts</a></li>
-                <li><a href="ClanCastleTroopsHV.html">Clan Castle Troops</a></li>
-            </ul>
-        </div>
-
-        <button class="collapsible" type="button">Builder Base</button>
-        <div class="expandobj">
-            <ul>
-                <li><a href="AttackStratsBB.html">Attack Strategies</a></li>
-                <li><a href="BaseLayoutsBB.html">Base Layouts</a></li>
-            </ul>
-        </div>
-
-        <button class="collapsible" type="button">Clan Capital</button>
-        <div class="expandobj">
-            <ul>
-                <li><a href="AttackStratsCC.html">Attack Strategies</a></li>
-                <li><a href="BaseLayoutsCC.html">Base Layouts</a></li>
-            </ul>
-        </div>
-
+        <button class="openbtn" onclick="back()">← Back</button>
     </div>
 
     <!--- End Sidebar/Navigation --------------------------------------------------->
@@ -66,7 +36,11 @@
                 </div>
                 <div class="categories">
                     <div>
-                <span class="category">
+                        <span class="category">
+                    <input id="cat-th1" type="checkbox" value="th1">
+                    <label for="cat-th1">CH1</label>
+                </span>
+                        <span class="category">
                     <input id="cat-th2" type="checkbox" value="th2">
                     <label for="cat-th2">CH2</label>
                 </span>
@@ -94,60 +68,12 @@
                     <input id="cat-th8" type="checkbox" value="th8">
                     <label for="cat-th8">CH8</label>
                 </span>
-                        <span class="category">
-                    <input id="cat-th9" type="checkbox" value="th9">
-                    <label for="cat-th9">CH9</label>
-                </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="filterboxes2">
-            <button class="collapsible" id="filterbtn2" type="button">District</button>
-            <div class="expandobj">
-                <div><p>Select the District you want to attack</p></div>
-                <div class="categories">
-
-                    <div>
-                <span class="category">
-                <input id="cat-bbcamp" type="checkbox" value="bbcamp">
-                <label for="cat-bbcamp">Barbarian Camp</label>
-                 </span>
-                        <span class="category">
-                <input id="cat-wvalley" type="checkbox" value="wvalley">
-                <label for="cat-wvalley">Wizard Valley</label>
-                 </span>
-                        <span class="category">
-                <input id="cat-blagoon" type="checkbox" value="blagoon">
-                <label for="cat-blagoon">Ballon Lagoon</label>
-                 </span>
-                        <span class="category">
-                <input id="cat-bworkshop" type="checkbox" value="bworkshop">
-                <label for="cat-bworkshop">Builder's Workshop</label>
-                 </span>
-                        <span class="category">
-                <input id="cat-dvalley" type="checkbox" value="dvalley">
-                <label for="cat-dvalley">Dragon Cliffs</label>
-                 </span>
-                        <span class="category">
-                <input id="cat-gquary" type="checkbox" value="gquary">
-                <label for="cat-gquary">Golem Quarry</label>
-                 </span>
-                        <span class="category">
-                <input id="cat-spark" type="checkbox" value="spark">
-                <label for="cat-spark">Skeleton Park</label>
-                 </span>
-                        <span class="category">
-                <input id="cat-gmines" type="checkbox" value="gmines">
-                <label for="cat-gmines">Goblin Mines</label>
-                 </span>
-
-                        <!---Add rest of the districts--->
 
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
 
 
@@ -156,8 +82,8 @@
     <!--- Start Content ------------------------------------------------->
 
     <div class="container">
-        <div class="filterDiv th7 th8 dvalley"><a href="#">Mass Super Dragons</a></div>
-        <div class="filterDiv th2 th3 bbcamp"><a href="#">Barch</a></div>
+        <div class="filterDiv th1"><a href="pages/#"><img src="CCBimg/#" alt="v1"> </a></div>
+        <div class="filterDiv th1"><a href="pages/#"><img src="CCBimg/#" alt="v2"></a></div>
     </div>
 
 
