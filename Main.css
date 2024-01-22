@@ -7,6 +7,7 @@
 
 
 div {
+
     margin: 5px;
     padding: 5px;
 }
@@ -41,6 +42,8 @@ div {
     margin: 5px;
     padding: 5px;
     text-align: center;
+    max-width: 1000px;
+    text-line-through-style: block;
 }
 
 .aside a {
@@ -111,7 +114,6 @@ input {
 
 /*----------- End Form CSS -----------*/
 
-
 /*----------- Start Sidebar CSS -----------*/
 .nav {
     grid-area: nav;
@@ -165,6 +167,7 @@ input {
 }
 
 .sidebar a:hover {
+    transition: 0.1s;
     color: var(--black);
     background-color: var(--white);
 
@@ -190,6 +193,7 @@ input {
 }
 
 .openbtn:hover {
+    transition: 0.1s;
     background-color: var(--black);
     color: var(--white);
     border: var(--white) dashed 2px;
@@ -215,6 +219,7 @@ input {
 }
 
 .collapsible:hover {
+    transition: 0.1s;
     background-color: var(--white);
     color: var(--black);
 }
@@ -223,8 +228,6 @@ input {
     background-color: var(--white);
     color: var(--black);
 }
-
-
 
 .expandobj {
     padding: 0;
@@ -248,9 +251,12 @@ input {
     float: left;
     padding-left: 32px;
 }
+
 :hover:after{
+    transition: 0.1s;
     color: var(--black);
 }
+
 .active:after{
     content: "\2212"; /*minus sign*/
     color: var(--black);
@@ -271,12 +277,18 @@ input {
     margin: 2px;
     display: none;
 }
+
+.filterDiv :hover{
+    transition: 0.1s;
+}
+
  #filterboxes {
     margin: 0 auto;
     padding: 0;
     max-width: 1000px;
 
 }
+
  #filterboxes2 {
 
     margin: 10px 0 0 auto;
@@ -284,12 +296,9 @@ input {
     max-width: 1000px;
 
 }
+
 .expandobj div {
     text-align: center;
-}
-
-.show {
-    display: block;
 }
 
 .container {
@@ -300,7 +309,6 @@ input {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1000px;
-
     margin: 0 auto;
 }
 
@@ -318,9 +326,16 @@ input {
     display: block;
 }
 
-.container {
-    margin-top: 20px;
-    overflow: hidden;
+
+
+.CCdistrict {
+    float: left;
+    background-color: var(--trrey);
+    color: #ffffff;
+    line-height: 50px;
+    text-align: center;
+    margin: 2px;
+
 }
 
 /* Style the buttons */
@@ -368,6 +383,7 @@ input {
     color: var(--white);
 }
 #filterbtn:hover{
+    transition: 0.1s;
     background-color: var(--white);
     color: var(--black);
     border: dashed 2px var(--black);
@@ -383,6 +399,7 @@ input {
     color: var(--white);
 }
 #filterbtn2:hover{
+    transition: 0.1s;
     background-color: var(--white);
     color: var(--black);
     border: dashed 2px var(--black);
@@ -419,12 +436,14 @@ input {
 }
 
 .categories label:hover {
+    transition: 0.1s;
     background-color: var(--white);
     color: var(--black);
     border: dashed 2px var(--black);
 }
 
 .btn:hover {
+    transition: 0.1s;
     background-color: #ddd;
 }
 
@@ -437,14 +456,14 @@ input {
 
 
 /*Content css's*/
-.content {
-    grid-area: content;
+.subtitle {
+    grid-area: filters;
     margin: 0 auto;
     padding: 5px;
     text-align: center;
     max-width: 800px;
-}
 
+}
 
 .description {
     text-align: center;
@@ -462,7 +481,6 @@ input {
     text-align: left;
 }
 
-
 .guide {
     text-align: center;
 
@@ -477,7 +495,7 @@ body {
     margin: 0 auto;
     margin-top: 10px;
     max-width: 1000px;
-
+    min-width: 350px;
     color: var(--white);
     background-color: var(--black);
     margin-bottom: 60px;
